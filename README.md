@@ -2,7 +2,7 @@
 API RestFul criada para treinar as habilidade novas com Framework Spring 
 
 
-##Diagrama de Classes
+## Diagrama de Classes
 
 ```mermaid 
 classDiagram
