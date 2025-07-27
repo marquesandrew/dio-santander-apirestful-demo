@@ -2,6 +2,7 @@ package com.example.demo.model;
 
 import jakarta.persistence.*;
 
+
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
@@ -24,6 +25,9 @@ public class Construction {
 
     @OneToOne
     private Client client;
+
+    @Version
+    private Long version;
 
     public Construction(){}
 
@@ -82,5 +86,13 @@ public class Construction {
 
     public void setCliente(Client client) {
         this.client = client;
+    }
+
+    public Long getVersion() {
+        return version;
+    }
+
+    public void setVersion(Long version) {
+        this.version = version;
     }
 }

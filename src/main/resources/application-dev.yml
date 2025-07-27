@@ -1,10 +1,10 @@
 server:
-  port: 8081
+  port: 8080
 
 spring:
   datasource:
-    url: jdbc:h2:mem:demo2025
-    username: demo2025
+    url: jdbc:h2:mem:sa
+    username: sa
     password:
   jpa:
     show-sql: true
@@ -17,7 +17,7 @@ spring:
   h2:
     console:
       enable: true
-      path: /h2
+      path: /banco
       settings:
         trace: false
-        web-allow-others: false
+        web-allow-others: true
